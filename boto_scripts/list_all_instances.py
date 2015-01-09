@@ -1,8 +1,8 @@
 import argparse
 import boto.ec2
 from pprint import pprint 
-access_key = 'AKIAJVY3JZEG3LVOPFQQ'
-secret_key = '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'
+access_key = 'XXXXXXX'
+secret_key = 'XxXXXXXXXx/husg7uC'
  
 AWS_ACCESS_KEY_ID = ''
 AWS_SECRET_ACCESS_KEY = '/husg7uC'
@@ -18,7 +18,7 @@ def get_ec2_instances(reg):
 #    for reservation in reservations:    
 #        print region+':',reservation.instances
 
- ec2conn=boto.ec2.connect_to_region(reg,aws_access_key_id='AKIAJVY3JZEG3LVOPFQQ',aws_secret_access_key='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')
+ ec2conn=boto.ec2.connect_to_region(reg,aws_access_key_id='XXXXXXXXXX',aws_secret_access_key='XXXXX/XXXXXX')
  #ec2conn = boto.ec2.connection.EC2Connection(aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
 
  reservations = ec2conn.get_all_instances()
