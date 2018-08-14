@@ -1,0 +1,20 @@
+
+#conn = rds.connect_to_region('us-west-2',AWS_SECRET_ACCESS_KEY , AWS_SECRET_ACCESS_KEY )
+
+
+from boto import rds
+
+conn = rds.connect_to_region('us-west-2')
+list = conn.get_all_dbinstances()
+
+stats = {}
+
+for i in list:
+     if i.instance_class in stats:
+             stats[i.instance_class] += 1
+     else:
+             stats[i.instance_class] = 1
+
+
+
+print stats
