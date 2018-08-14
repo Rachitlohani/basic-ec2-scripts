@@ -2,7 +2,7 @@ import requests
 import json
 import datetime, time
 
-NEWRELIC_API_KEY = "743a24875647dd2dda78ef3e40c6142ee670ca7f8b2adb5"
+NEWRELIC_API_KEY = "newrelickey"
 HOURS_TO_KEEP = 0
 
 HEADERS = {"X-Api-Key": NEWRELIC_API_KEY}
